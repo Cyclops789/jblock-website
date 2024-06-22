@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+.title {
+  font-family: 'Graffiti', sans-serif;
+}
+
+.shimmer {
+  color: grey;
+  display:inline-block;
+  -webkit-mask:linear-gradient(-60deg,#000 30%,#0005,#000 70%) right/300% 100%;
+  background-repeat: no-repeat;
+  animation: shimmer 4s infinite;
+  font-size: 50px;
+}
+
+@font-face {
+  font-family: 'Graffiti';
+  src: url('./fonts/SecretoDemoRegular.ttf') format('truetype');
+}
+
+@keyframes shimmer {
+  100% {-webkit-mask-position:left}
+}
