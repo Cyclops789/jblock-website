@@ -96,7 +96,7 @@ function JBRules() {
         <div className="w-full px-2 sm:px-0 sm:w-[calc(100%-280px)] grid grid-cols-1 md:grid-cols-2 gap-4 justify-between">
 
           {rules.map((rule) => (
-            <div key={rule.title} className='border-2 border-primary rounded-lg min-h-[200px]'>
+            <div key={rule.title} className='border-2 border-primary rounded-lg min-h-[80px]'>
               <div className='pt-1 bg-primary text-black text-xl text-center h-[35px]'>{rule.title}</div>
               <div
                 className='my-1 px-1 text-start items-center h-full text-white'

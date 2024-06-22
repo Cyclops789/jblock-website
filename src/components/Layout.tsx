@@ -61,7 +61,7 @@ function Layout() {
                 </div>
             </div>
 
-            <div onClick={() => setOpened(!opened)} className={classNames('fixed top-2 left-2 flex items-center space-x-2 select-none cursor-pointer', { 'z-[3]': opened })}>
+            <div onClick={() => setOpened(!opened)} className={classNames('fixed top-2 left-2 flex space-x-2 select-none cursor-pointer', { 'z-[3]': opened })}>
                 <div className={classNames(`mt-2 tham tham-e-arrow-alt tham-w-8`, { 'tham-active': opened })}>
                     <div className="tham-box">
                         <div className={classNames("tham-inner", { 'bg-primary': !opened }, { 'bg-black': opened })} />
