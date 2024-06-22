@@ -5,17 +5,13 @@
 body {
   background-color: #000;
   color: #fff;
-  font-family: 'Arial', sans-serif;
-}
-
-* {
   font-family: 'Graffiti', sans-serif;
 }
 
 .shimmer {
   color: grey;
-  display:inline-block;
-  -webkit-mask:linear-gradient(-60deg,#000 30%,#0005,#000 70%) right/300% 100%;
+  display: inline-block;
+  -webkit-mask: linear-gradient(-60deg,#000 30%,#0005,#000 70%) right/300% 100%;
   background-repeat: no-repeat;
   animation: shimmer 4s infinite;
   font-size: 50px;
@@ -24,6 +20,11 @@ body {
 @font-face {
   font-family: 'Graffiti';
   src: url('./assets/fonts/SecretoDemoRegular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Sedgwick Ave';
+  src: url('./assets/fonts/SedgwickAve-Regular.ttf') format('truetype');
 }
 
 @keyframes shimmer {
