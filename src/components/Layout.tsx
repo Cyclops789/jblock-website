@@ -44,7 +44,7 @@ function Layout() {
 
     return (
         <React.Fragment>
-            <div className={classNames('z-[2] top-0 fixed bg-primary w-screen transition-all duration-200', { 'h-[calc(100vh-200px)] border-b border-b-black': opened }, { 'h-[0px]': !opened })}>
+            <div className={classNames('z-[2] top-0 fixed bg-primary w-screen transition-all duration-200 overflow-auto', { 'h-screen sm:h-[calc(100vh-100px)] border-b border-b-black': opened }, { 'h-[0px]': !opened })}>
                 <div className={classNames('pt-3 px-[65px] text-black h-full grid sm:flex justify-evenly items-center', { '!hidden': !opened })}>
                     {menuItems.map((menu) => (
                         <div key={menu.title}>
@@ -61,7 +61,7 @@ function Layout() {
                 </div>
             </div>
 
-            <div onClick={() => setOpened(!opened)} className='z-[3] fixed top-2 left-2 flex items-center space-x-2 select-none cursor-pointer'>
+            <div onClick={() => setOpened(!opened)} className={classNames('fixed top-2 left-2 flex items-center space-x-2 select-none cursor-pointer', { 'z-[3]': opened })}>
                 <div className={classNames(`mt-2 tham tham-e-arrow-alt tham-w-8`, { 'tham-active': opened })}>
                     <div className="tham-box">
                         <div className={classNames("tham-inner", { 'bg-primary': !opened }, { 'bg-black': opened })} />

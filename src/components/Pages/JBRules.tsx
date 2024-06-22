@@ -91,9 +91,9 @@ function JBRules() {
           fontWeight: 400,
           fontStyle: 'normal',
         }}
-        className='mt-[100px] w-screen flex justify-center'
+        className='mt-[100px] bg-black w-screen flex justify-center'
       >
-        <div className="w-full px-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 justify-between">
+        <div className="w-full px-2 sm:px-0 sm:w-[calc(100%-280px)] grid grid-cols-1 md:grid-cols-2 gap-4 justify-between">
 
           {rules.map((rule) => (
             <div key={rule.title} className='border-2 border-primary rounded-lg min-h-[200px]'>
